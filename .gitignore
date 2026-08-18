@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+myenv/
+ENV/
+env.bak/
+venv.bak/
+
+# Django
+*.log
+*.pot
+*.pyc
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+/media/
+/static/
+/staticfiles/
+
+# PostgreSQL
+*.sql
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Desktop.ini
+
+# Virtual Environment
+myenv/
+venv/
+env/
+
+# Environment Variables
+.env
+.env.local
+.env.production
+
+# Logs
+logs/
+*.log
+
+# Media files
+/media/
+
+# Database backups
+*.backup
+
+# Node modules (if any)
+node_modules/
+npm-debug.log*
+
+# Testing
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+
+# OS specific
+Thumbs.db
+.DS_Store
+
+# Python package management
+pip-log.txt
+pip-delete-this-directory.txt
+.eggs/
+*.egg-info/
+*.egg
+dist/
+build/
