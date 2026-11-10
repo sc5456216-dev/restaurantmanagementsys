@@ -1,0 +1,19 @@
+{% extends 'website/base.html' %}
+{% block title %}Reserve — Savory{% endblock %}
+{% block content %}
+<div class="container section narrow">
+    <h1>Reserve a Table</h1>
+    <form method="post" class="form">
+        {% csrf_token %}
+        <label>Name *<input type="text" name="customer_name" required value="{{ form_data.customer_name|default:'' }}"></label>
+        <label>Phone *<input type="text" name="customer_phone" required value="{{ form_data.customer_phone|default:'' }}"></label>
+        <label>Email<input type="email" name="customer_email" value="{{ form_data.customer_email|default:'' }}"></label>
+        <label>Party size *<input type="number" name="number_of_guests" min="1" required value="{{ form_data.number_of_guests|default:'2' }}"></label>
+        <label>Date *<input type="date" name="reservation_date" required value="{{ form_data.reservation_date|default:'' }}"></label>
+        <label>Time *<input type="time" name="reservation_time" required value="{{ form_data.reservation_time|default:'' }}"></label>
+        <label>Special requests<textarea name="special_requests" rows="3">{{ form_data.special_requests|default:'' }}</textarea></label>
+        <button type="submit" class="btn">Request Reservation</button>
+    </form>
+    <p class="muted small">We'll auto-assign the best available table and confirm by phone.</p>
+</div>
+{% endblock %}

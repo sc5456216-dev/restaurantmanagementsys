@@ -1,0 +1,36 @@
+{% extends 'website/base.html' %}
+{% block title %}Menu — Savory{% endblock %}
+{% block content %}
+<div class="container section">
+    <h1>Menu</h1>
+    {% for category in categories %}
+        <h2 class="cat-title">{{ category.name }}</h2>
+        {% if category.description %}<p class="muted">{{ category.description }}</p>{% endif %}
+        <div class="grid">
+            {% for item in category.items.all %}
+                {% if item.is_available %}
+                <div class="card">
+                    {% if item.image %}<img src="{{ item.image.url }}" alt="{{ item.name }}">{% endif %}
+                    <div class="card-body">
+                        <h3>{{ item.name }}</h3>
+                        <p class="muted small">{{ item.description|truncatechars:90 }}</p>
+                        <p class="price">${{ item.price }}</p>
+                        <div class="card-actions">
+                            <a href="{% url 'website:menu_detail' item.id %}" class="btn btn-sm btn-ghost">Details</a>
+                            <form method="post" action="{% url 'website:cart_add' item.id %}">
+                                {% csrf_token %}
+                                <input type="hidden" name="quantity" value="1">
+                                <input type="hidden" name="next" value="{% url 'website:menu_list' %}">
+                                <button type="submit" class="btn btn-sm">Add</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% empty %}
+        <p>No categories yet. Add some in <a href="/admin/">admin</a>.</p>
+    {% endfor %}
+</div>
+{% endblock %}

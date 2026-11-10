@@ -1,0 +1,38 @@
+{% extends 'website/base.html' %}
+{% block title %}Savory — Home{% endblock %}
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <h1>Fresh food, made with love.</h1>
+        <p>Order online for pickup or dine in with us.</p>
+        <a href="{% url 'website:menu_list' %}" class="btn">View Menu</a>
+        <a href="{% url 'website:reserve' %}" class="btn btn-ghost">Reserve a Table</a>
+    </div>
+</section>
+
+<section class="container section">
+    <h2>Featured Dishes</h2>
+    <div class="grid">
+        {% for item in featured_items %}
+        <a href="{% url 'website:menu_detail' item.id %}" class="card">
+            {% if item.image %}<img src="{{ item.image.url }}" alt="{{ item.name }}">{% endif %}
+            <div class="card-body">
+                <h3>{{ item.name }}</h3>
+                <p class="price">${{ item.price }}</p>
+            </div>
+        </a>
+        {% empty %}
+        <p>No items yet — add some in the admin panel.</p>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="container section">
+    <h2>Categories</h2>
+    <ul class="tag-list">
+        {% for c in categories %}
+            <li>{{ c.name }}</li>
+        {% endfor %}
+    </ul>
+</section>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'website/base.html' %}
+{% block title %}Order #{{ order.id }} — Savory{% endblock %}
+{% block content %}
+<div class="container section center">
+    <h1>✅ Thank you, {{ order.customer_name }}!</h1>
+    <p>Your order <strong>#{{ order.id }}</strong> was received.</p>
+    <p>Total: <strong>${{ order.total_amount }}</strong></p>
+    <p>We'll call you at {{ order.customer_phone }} when it's ready.</p>
+    <p class="muted small">Status: {{ order.get_status_display }}</p>
+    <a href="{% url 'website:menu_list' %}" class="btn">Order more</a>
+</div>
+{% endblock %}

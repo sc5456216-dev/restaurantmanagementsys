@@ -39,6 +39,7 @@ router.register(r'inventory-transactions', InventoryTransactionViewSet, basename
 router.register(r'reports', ReportViewSet, basename='report')
 
 urlpatterns = [
+    path('', include('website.urls')),          
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
     path('api-auth/', include('rest_framework.urls')),

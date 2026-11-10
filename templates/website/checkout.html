@@ -1,0 +1,45 @@
+{% extends 'website/base.html' %}
+{% block title %}Checkout — Savory{% endblock %}
+{% block content %}
+<div class="container section">
+    <h1>Checkout</h1>
+    <div class="checkout-grid">
+        <form method="post" class="form">
+            {% csrf_token %}
+            <label>Name *<input type="text" name="customer_name" required value="{{ form_data.customer_name|default:'' }}"></label>
+            <label>Phone *<input type="text" name="customer_phone" required value="{{ form_data.customer_phone|default:'' }}"></label>
+
+            <fieldset>
+                <legend>Order type</legend>
+                <label class="inline"><input type="radio" name="order_type" value="pickup" checked> Pickup</label>
+                <label class="inline"><input type="radio" name="order_type" value="dinein"> Dine-in</label>
+            </fieldset>
+
+            <label>Table (dine-in only)
+                <select name="table">
+                    <option value="">— select —</option>
+                    {% for t in tables %}
+                    <option value="{{ t.id }}">Table {{ t.table_number }} ({{ t.capacity }} seats)</option>
+                    {% endfor %}
+                </select>
+            </label>
+
+            <label>Notes / Delivery address (optional)<textarea name="notes" rows="3">{{ form_data.notes|default:'' }}</textarea></label>
+
+            <button type="submit" class="btn">Place Order</button>
+        </form>
+
+        <aside class="summary">
+            <h3>Order Summary</h3>
+            <ul>
+                {% for line in items %}
+                <li>{{ line.quantity }} × {{ line.menu_item.name }} — ${{ line.line_total }}</li>
+                {% endfor %}
+            </ul>
+            <p>Subtotal: ${{ subtotal }}</p>
+            <p>Tax: ${{ tax }}</p>
+            <p><strong>Total: ${{ total }}</strong></p>
+        </aside>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Savory — Restaurant{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/website.css' %}">
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="{% url 'website:home' %}" class="brand">🍽️ Savory</a>
+        <nav class="nav">
+            <a href="{% url 'website:home' %}">Home</a>
+            <a href="{% url 'website:menu_list' %}">Menu</a>
+            <a href="{% url 'website:reserve' %}">Reserve</a>
+            <a href="{% url 'website:about' %}">About</a>
+            <a href="{% url 'website:contact' %}">Contact</a>
+            <a href="{% url 'website:cart' %}" class="cart-link">🛒 Cart</a>
+        </nav>
+    </div>
+</header>
+
+{% if messages %}
+<div class="container messages">
+    {% for message in messages %}
+        <div class="msg msg-{{ message.tags }}">{{ message }}</div>
+    {% endfor %}
+</div>
+{% endif %}
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>© {% now "Y" %} Savory Restaurant · 123 Main St · Open daily 11am–10pm</p>
+        <p>Phone: (555) 123-4567 · Email: hello@savory.example</p>
+    </div>
+</footer>
+</body>
+</html>

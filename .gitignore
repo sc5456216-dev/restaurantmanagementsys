@@ -1,9 +1,18 @@
-# Python
+# ---------- Python ----------
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
+.eggs/
+*.egg-info/
+*.egg
+dist/
+build/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ---------- Virtual environments ----------
 env/
 venv/
 myenv/
@@ -11,22 +20,47 @@ ENV/
 env.bak/
 venv.bak/
 
-# Django
+# ---------- Django ----------
 *.log
 *.pot
-*.pyc
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
-/media/
-/static/
 /staticfiles/
 
-# PostgreSQL
+# ---------- Database ----------
 *.sql
 *.sqlite3
+*.backup
 
-# IDE
+# ---------- Media: keep curated samples, ignore future uploads ----------
+/media/*
+!/media/menu_items/
+/media/menu_items/*
+!/media/menu_items/chicken1.jpg
+!/media/menu_items/pasta1.jpg
+!/media/menu_items/salad1.jpg
+!/media/menu_items/cake1.jpg
+!/media/menu_items/lemonade1.jpg
+!/media/menu_items/caesar1.jpg
+!/media/menu_items/pizza1.jpg
+
+# ---------- Environment / secrets ----------
+.env
+.env.local
+.env.production
+
+# ---------- Logs ----------
+logs/
+*.log
+
+# ---------- Testing ----------
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+
+# ---------- IDE / OS ----------
 .vscode/
 .idea/
 *.swp
@@ -34,46 +68,8 @@ db.sqlite3-journal
 *~
 .DS_Store
 Desktop.ini
+Thumbs.db
 
-# Virtual Environment
-myenv/
-venv/
-env/
-
-# Environment Variables
-.env
-.env.local
-.env.production
-
-# Logs
-logs/
-*.log
-
-# Media files
-/media/
-
-# Database backups
-*.backup
-
-# Node modules (if any)
+# ---------- Node (if any) ----------
 node_modules/
 npm-debug.log*
-
-# Testing
-.coverage
-htmlcov/
-.tox/
-.pytest_cache/
-
-# OS specific
-Thumbs.db
-.DS_Store
-
-# Python package management
-pip-log.txt
-pip-delete-this-directory.txt
-.eggs/
-*.egg-info/
-*.egg
-dist/
-build/
