@@ -1,0 +1,538 @@
+﻿[
+{
+  "model": "menu.category",
+  "pk": 1,
+  "fields": {
+    "name": "Appetizers",
+    "description": "Start your meal with these delicious options",
+    "created_at": "2026-08-15T14:10:16.085Z",
+    "updated_at": "2026-08-15T14:10:16.085Z"
+  }
+},
+{
+  "model": "menu.category",
+  "pk": 2,
+  "fields": {
+    "name": "Main Course",
+    "description": "Our signature main dishes",
+    "created_at": "2026-08-15T14:10:16.088Z",
+    "updated_at": "2026-08-15T14:10:16.088Z"
+  }
+},
+{
+  "model": "menu.category",
+  "pk": 3,
+  "fields": {
+    "name": "Desserts",
+    "description": "Sweet endings to your meal",
+    "created_at": "2026-08-15T14:10:16.090Z",
+    "updated_at": "2026-08-15T14:10:16.090Z"
+  }
+},
+{
+  "model": "menu.category",
+  "pk": 4,
+  "fields": {
+    "name": "Beverages",
+    "description": "Refreshing drinks",
+    "created_at": "2026-08-15T14:10:16.092Z",
+    "updated_at": "2026-08-15T14:10:16.092Z"
+  }
+},
+{
+  "model": "menu.category",
+  "pk": 5,
+  "fields": {
+    "name": "Specials",
+    "description": "Chef's special creations",
+    "created_at": "2026-08-15T14:10:16.094Z",
+    "updated_at": "2026-08-15T14:10:16.094Z"
+  }
+},
+{
+  "model": "menu.category",
+  "pk": 6,
+  "fields": {
+    "name": "Momo",
+    "description": "",
+    "created_at": "2026-11-10T04:25:30.207Z",
+    "updated_at": "2026-11-10T04:25:30.207Z"
+  }
+},
+{
+  "model": "menu.category",
+  "pk": 7,
+  "fields": {
+    "name": "Chowmein",
+    "description": "",
+    "created_at": "2026-11-10T04:25:30.258Z",
+    "updated_at": "2026-11-10T04:25:30.258Z"
+  }
+},
+{
+  "model": "menu.category",
+  "pk": 8,
+  "fields": {
+    "name": "Egg Items",
+    "description": "",
+    "created_at": "2026-11-10T04:25:30.267Z",
+    "updated_at": "2026-11-10T04:25:30.267Z"
+  }
+},
+{
+  "model": "menu.category",
+  "pk": 9,
+  "fields": {
+    "name": "Rice",
+    "description": "",
+    "created_at": "2026-11-10T04:25:30.274Z",
+    "updated_at": "2026-11-10T04:25:30.274Z"
+  }
+},
+{
+  "model": "menu.category",
+  "pk": 10,
+  "fields": {
+    "name": "Fish",
+    "description": "",
+    "created_at": "2026-11-10T04:25:30.281Z",
+    "updated_at": "2026-11-10T04:25:30.281Z"
+  }
+},
+{
+  "model": "menu.menuitem",
+  "pk": 1,
+  "fields": {
+    "name": "Grilled Chicken",
+    "description": "Juicy grilled chicken breast with roasted vegetables and herbs",
+    "price": "18.99",
+    "category": 2,
+    "is_available": true,
+    "preparation_time": 20,
+    "image": "menu_items/chicken1.jpg",
+    "ingredients": "",
+    "created_at": "2026-08-15T14:10:16.140Z",
+    "updated_at": "2026-11-10T03:47:20.214Z"
+  }
+},
+{
+  "model": "menu.menuitem",
+  "pk": 2,
+  "fields": {
+    "name": "Pasta Carbonara",
+    "description": "Classic Italian pasta with creamy sauce and pancetta",
+    "price": "16.99",
+    "category": 2,
+    "is_available": true,
+    "preparation_time": 15,
+    "image": "menu_items/pasta1.jpg",
+    "ingredients": "",
+    "created_at": "2026-08-15T14:10:16.150Z",
+    "updated_at": "2026-11-10T03:47:20.230Z"
+  }
+},
+{
+  "model": "menu.menuitem",
+  "pk": 3,
+  "fields": {
+    "name": "Caprese Salad",
+    "description": "Fresh mozzarella, tomatoes, and basil with balsamic glaze",
+    "price": "12.99",
+    "category": 1,
+    "is_available": true,
+    "preparation_time": 10,
+    "image": "menu_items/salad1.jpg",
+    "ingredients": "",
+    "created_at": "2026-08-15T14:10:16.154Z",
+    "updated_at": "2026-11-10T03:47:20.237Z"
+  }
+},
+{
+  "model": "menu.menuitem",
+  "pk": 4,
+  "fields": {
+    "name": "Chocolate Cake",
+    "description": "Rich chocolate cake with ganache frosting",
+    "price": "8.99",
+    "category": 3,
+    "is_available": true,
+    "preparation_time": 25,
+    "image": "menu_items/cake1.jpg",
+    "ingredients": "",
+    "created_at": "2026-08-15T14:10:16.157Z",
+    "updated_at": "2026-11-10T03:47:20.244Z"
+  }
+},
+{
+  "model": "menu.menuitem",
+  "pk": 5,
+  "fields": {
+    "name": "Fresh Lemonade",
+    "description": "Homemade lemonade with fresh lemons and mint",
+    "price": "4.99",
+    "category": 4,
+    "is_available": true,
+    "preparation_time": 5,
+    "image": "menu_items/lemonade1.jpg",
+    "ingredients": "",
+    "created_at": "2026-08-15T14:10:16.160Z",
+    "updated_at": "2026-11-10T03:47:20.256Z"
+  }
+},
+{
+  "model": "menu.menuitem",
+  "pk": 6,
+  "fields": {
+    "name": "Caesar Salad",
+    "description": "Classic Caesar salad with crispy croutons and parmesan",
+    "price": "14.99",
+    "category": 1,
+    "is_available": true,
+    "preparation_time": 12,
+    "image": "menu_items/caesar1.jpg",
+    "ingredients": "",
+    "created_at": "2026-08-15T14:10:16.162Z",
+    "updated_at": "2026-11-10T03:51:16.962Z"
+  }
+},
+{
+  "model": "menu.menuitem",
+  "pk": 7,
+  "fields": {
+    "name": "Veg Mo:Mo",
+    "description": "Steamed dumplings stuffed with mixed vegetables and spices",
+    "price": "8.99",
+    "category": 6,
+    "is_available": true,
+    "preparation_time": 15,
+    "image": "menu_items/veg_momo_WYA4FqB.jpg",
+    "ingredients": "",
+    "created_at": "2026-11-10T04:26:11.910Z",
+    "updated_at": "2026-11-10T04:33:56.575Z"
+  }
+},
+{
+  "model": "menu.menuitem",
+  "pk": 8,
+  "fields": {
+    "name": "Chicken Mo:Mo",
+    "description": "Steamed dumplings filled with minced chicken and herbs",
+    "price": "10.99",
+    "category": 6,
+    "is_available": true,
+    "preparation_time": 15,
+    "image": "menu_items/chicken_momo_92TweLG.jpg",
+    "ingredients": "",
+    "created_at": "2026-11-10T04:26:11.938Z",
+    "updated_at": "2026-11-10T04:33:56.619Z"
+  }
+},
+{
+  "model": "menu.menuitem",
+  "pk": 9,
+  "fields": {
+    "name": "Buff Mo:Mo",
+    "description": "Traditional Nepali buffalo dumplings, served with tomato achar",
+    "price": "10.49",
+    "category": 6,
+    "is_available": true,
+    "preparation_time": 18,
+    "image": "menu_items/buff_momo_vHltQjs.jpg",
+    "ingredients": "",
+    "created_at": "2026-11-10T04:26:11.954Z",
+    "updated_at": "2026-11-10T04:33:56.629Z"
+  }
+},
+{
+  "model": "menu.menuitem",
+  "pk": 10,
+  "fields": {
+    "name": "Chicken Chowmein",
+    "description": "Stir-fried noodles with chicken and vegetables",
+    "price": "9.99",
+    "category": 7,
+    "is_available": true,
+    "preparation_time": 12,
+    "image": "menu_items/chowmein_WNCJGJI.jpg",
+    "ingredients": "",
+    "created_at": "2026-11-10T04:26:11.971Z",
+    "updated_at": "2026-11-10T04:33:56.641Z"
+  }
+},
+{
+  "model": "menu.menuitem",
+  "pk": 11,
+  "fields": {
+    "name": "Egg Chowmein",
+    "description": "Stir-fried noodles with scrambled egg and vegetables",
+    "price": "8.49",
+    "category": 7,
+    "is_available": true,
+    "preparation_time": 10,
+    "image": "menu_items/egg_chowmein_Mu7arTN.jpg",
+    "ingredients": "",
+    "created_at": "2026-11-10T04:26:11.987Z",
+    "updated_at": "2026-11-10T04:33:56.654Z"
+  }
+},
+{
+  "model": "menu.menuitem",
+  "pk": 12,
+  "fields": {
+    "name": "Egg Curry",
+    "description": "Boiled eggs simmered in spiced onion-tomato gravy",
+    "price": "7.99",
+    "category": 8,
+    "is_available": true,
+    "preparation_time": 12,
+    "image": "menu_items/egg_curry_bFStCyf.jpg",
+    "ingredients": "",
+    "created_at": "2026-11-10T04:26:12.004Z",
+    "updated_at": "2026-11-10T04:33:56.670Z"
+  }
+},
+{
+  "model": "menu.menuitem",
+  "pk": 13,
+  "fields": {
+    "name": "Fried Rice",
+    "description": "Wok-tossed rice with vegetables and soy sauce",
+    "price": "8.99",
+    "category": 9,
+    "is_available": true,
+    "preparation_time": 12,
+    "image": "menu_items/fried_rice_nXayqrU.jpg",
+    "ingredients": "",
+    "created_at": "2026-11-10T04:26:12.020Z",
+    "updated_at": "2026-11-10T04:33:56.683Z"
+  }
+},
+{
+  "model": "menu.menuitem",
+  "pk": 14,
+  "fields": {
+    "name": "Fish Fry",
+    "description": "Crispy pan-fried fish with lemon and herbs",
+    "price": "13.99",
+    "category": 10,
+    "is_available": true,
+    "preparation_time": 15,
+    "image": "menu_items/fish_fry_81pMiwz.jpg",
+    "ingredients": "",
+    "created_at": "2026-11-10T04:26:12.037Z",
+    "updated_at": "2026-11-10T04:33:56.691Z"
+  }
+},
+{
+  "model": "menu.menuitem",
+  "pk": 15,
+  "fields": {
+    "name": "Chocolate Brownie",
+    "description": "Warm fudgy brownie with chocolate chunks",
+    "price": "6.99",
+    "category": 3,
+    "is_available": true,
+    "preparation_time": 10,
+    "image": "menu_items/chocolate_bzYDDZ7.jpg",
+    "ingredients": "",
+    "created_at": "2026-11-10T04:26:12.055Z",
+    "updated_at": "2026-11-10T04:33:56.700Z"
+  }
+},
+{
+  "model": "menu.menuitem",
+  "pk": 16,
+  "fields": {
+    "name": "Vanilla Ice Cream",
+    "description": "Creamy vanilla ice cream, two scoops",
+    "price": "4.99",
+    "category": 3,
+    "is_available": true,
+    "preparation_time": 5,
+    "image": "menu_items/icecream_AAU8iCQ.jpg",
+    "ingredients": "",
+    "created_at": "2026-11-10T04:26:12.072Z",
+    "updated_at": "2026-11-10T04:33:56.705Z"
+  }
+},
+{
+  "model": "menu.menuitemingredient",
+  "pk": 1,
+  "fields": {
+    "menu_item": 1,
+    "ingredient": 1,
+    "quantity_required": "0.20",
+    "unit": "KG"
+  }
+},
+{
+  "model": "menu.menuitemingredient",
+  "pk": 2,
+  "fields": {
+    "menu_item": 1,
+    "ingredient": 2,
+    "quantity_required": "0.10",
+    "unit": "KG"
+  }
+},
+{
+  "model": "menu.menuitemingredient",
+  "pk": 3,
+  "fields": {
+    "menu_item": 1,
+    "ingredient": 3,
+    "quantity_required": "0.05",
+    "unit": "KG"
+  }
+},
+{
+  "model": "menu.menuitemingredient",
+  "pk": 4,
+  "fields": {
+    "menu_item": 1,
+    "ingredient": 5,
+    "quantity_required": "0.02",
+    "unit": "L"
+  }
+},
+{
+  "model": "menu.menuitemingredient",
+  "pk": 5,
+  "fields": {
+    "menu_item": 2,
+    "ingredient": 6,
+    "quantity_required": "0.20",
+    "unit": "KG"
+  }
+},
+{
+  "model": "menu.menuitemingredient",
+  "pk": 6,
+  "fields": {
+    "menu_item": 2,
+    "ingredient": 7,
+    "quantity_required": "0.05",
+    "unit": "KG"
+  }
+},
+{
+  "model": "menu.menuitemingredient",
+  "pk": 7,
+  "fields": {
+    "menu_item": 2,
+    "ingredient": 3,
+    "quantity_required": "0.03",
+    "unit": "KG"
+  }
+},
+{
+  "model": "menu.menuitemingredient",
+  "pk": 8,
+  "fields": {
+    "menu_item": 2,
+    "ingredient": 4,
+    "quantity_required": "0.02",
+    "unit": "KG"
+  }
+},
+{
+  "model": "menu.menuitemingredient",
+  "pk": 9,
+  "fields": {
+    "menu_item": 2,
+    "ingredient": 5,
+    "quantity_required": "0.02",
+    "unit": "L"
+  }
+},
+{
+  "model": "menu.menuitemingredient",
+  "pk": 10,
+  "fields": {
+    "menu_item": 3,
+    "ingredient": 7,
+    "quantity_required": "0.10",
+    "unit": "KG"
+  }
+},
+{
+  "model": "menu.menuitemingredient",
+  "pk": 11,
+  "fields": {
+    "menu_item": 3,
+    "ingredient": 2,
+    "quantity_required": "0.15",
+    "unit": "KG"
+  }
+},
+{
+  "model": "menu.menuitemingredient",
+  "pk": 12,
+  "fields": {
+    "menu_item": 3,
+    "ingredient": 5,
+    "quantity_required": "0.01",
+    "unit": "L"
+  }
+},
+{
+  "model": "menu.menuitemingredient",
+  "pk": 13,
+  "fields": {
+    "menu_item": 4,
+    "ingredient": 8,
+    "quantity_required": "0.15",
+    "unit": "KG"
+  }
+},
+{
+  "model": "menu.menuitemingredient",
+  "pk": 14,
+  "fields": {
+    "menu_item": 4,
+    "ingredient": 9,
+    "quantity_required": "0.10",
+    "unit": "KG"
+  }
+},
+{
+  "model": "menu.menuitemingredient",
+  "pk": 15,
+  "fields": {
+    "menu_item": 4,
+    "ingredient": 10,
+    "quantity_required": "0.05",
+    "unit": "KG"
+  }
+},
+{
+  "model": "menu.menuitemingredient",
+  "pk": 16,
+  "fields": {
+    "menu_item": 6,
+    "ingredient": 7,
+    "quantity_required": "0.08",
+    "unit": "KG"
+  }
+},
+{
+  "model": "menu.menuitemingredient",
+  "pk": 17,
+  "fields": {
+    "menu_item": 6,
+    "ingredient": 2,
+    "quantity_required": "0.10",
+    "unit": "KG"
+  }
+},
+{
+  "model": "menu.menuitemingredient",
+  "pk": 18,
+  "fields": {
+    "menu_item": 6,
+    "ingredient": 5,
+    "quantity_required": "0.01",
+    "unit": "L"
+  }
+}
+]

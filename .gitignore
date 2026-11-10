@@ -44,6 +44,16 @@ db.sqlite3-journal
 !/media/menu_items/lemonade1.jpg
 !/media/menu_items/caesar1.jpg
 !/media/menu_items/pizza1.jpg
+!/media/menu_items/veg_momo.jpg
+!/media/menu_items/chicken_momo.jpg
+!/media/menu_items/buff_momo.jpg
+!/media/menu_items/chowmein.jpg
+!/media/menu_items/egg_chowmein.jpg
+!/media/menu_items/egg_curry.jpg
+!/media/menu_items/fried_rice.jpg
+!/media/menu_items/fish_fry.jpg
+!/media/menu_items/chocolate.jpg
+!/media/menu_items/icecream.jpg
 
 # ---------- Environment / secrets ----------
 .env
